@@ -1,0 +1,197 @@
+Scores: champ2.0
+test loss: 225.30142211914062
+validation loss: 228.70066833496094
+training loss: 215.06622314453125
+
+#Hyperparameter
+batch_size = 1
+num_workers = 1
+#CNN
+
+n_hidden_layers = 3
+n_in_channels = 2
+n_kernels = 32
+kernel_size = 7
+#learning
+
+l_rate = 1e-3
+weight_decay = 1e-5
+n_updates = 5e4
+
+
+###############
+
+Scores:
+test loss: 233.79901123046875
+validation loss: 237.23550415039062
+training loss: 223.71978759765625
+
+#Hyperparameter
+batch_size = 1
+num_workers = 1
+n_hidden_layers = 5
+n_in_channels = 2
+n_kernels = 16
+kernel_size = 7
+l_rate = 1.5e-4
+weight_decay = 1e-5
+n_updates = 5e4
+
+###########################
+
+
+Scores:
+test loss: 228.2547607421875
+validation loss: 231.96607971191406
+training loss: 218.16220092773438
+
+batch_size = 1
+num_workers = 0
+n_hidden_layers = 5
+n_in_channels = 2
+n_kernels = 16
+kernel_size = 7
+l_rate = 1.5e-4
+weight_decay = 1e-5
+n_updates = 5e4
+
+####################
+Champ 3.0
+Scores:
+test loss: 221.0260467529297
+validation loss: 224.79913330078125
+training loss: 210.71873474121094
+
+batch_size = 4
+num_workers = 1
+n_hidden_layers = 3
+n_in_channels = 2
+n_kernels = 32
+kernel_size = 7
+l_rate = 1.5e-3
+weight_decay = 1e-5
+n_updates = 5e4
+##################
+champ 4.0
+
+test loss: 216.63885498046875
+validation loss: 220.5698699951172
+training loss: 206.22129821777344
+
+
+batch_size = 3
+num_workers = 1
+n_hidden_layers = 3
+n_in_channels = 2
+n_kernels = 32
+kernel_size = 7
+l_rate = 1.5e-3
+weight_decay = 1e-5
+n_updates = 1e5
+####################
+
+outputs_1
+Scores:
+test loss: 218.9528350830078
+validation loss: 223.174560546875
+training loss: 208.70770263671875
+
+batch_size = 3
+num_workers = 0
+n_hidden_layers = 3
+n_in_channels = 2
+n_kernels = 32
+kernel_size = 7
+l_rate = 1.5e-3
+weight_decay = 1e-5
+n_updates = 1e5
+
+
+########################
+Scores:
+test loss: 208.81423950195312
+validation loss: 212.91378784179688
+training loss: 197.605224609375
+
+batch_size = 3 # too high
+num_workers = 1
+n_hidden_layers = 3
+n_in_channels = 2
+n_kernels = 32
+kernel_size = 7
+l_rate = 1e-3
+weight_decay = 1e-5
+n_updates = 1.5e5
+
+
+#######################
+
+outputs_2(hochgeladen)
+Scores:
+test loss: 216.83596801757812
+validation loss: 220.90631103515625
+training loss: 206.3032989501953
+
+
+batch_size = 1
+num_workers = 1
+n_hidden_layers = 3
+n_in_channels = 2
+n_kernels = 32
+kernel_size = 7
+l_rate = 1e-3
+weight_decay = 1e-8
+n_updates = 1.5e5
+
+########
+
+Mohnnudeln #45min training
+changed batchsize only in trainloader.size 16
+
+#add second batch_size one for everything other one for the trainloader
+#trainloader is possible to change the batch_size
+#all other batch_sizes has to stay 1 because they never get restored, if they would have an other batch_size the target.pkl on the server would no match the targets on the outputs
+
+outputs_3
+Scores:
+test loss: 204.18019104003906
+validation loss: 208.51947021484375
+training loss: 192.5677490234375
+
+
+batch_size = 1 # do not change
+batch_size_trainloader = 16 #can be changed
+num_workers = 0
+n_hidden_layers = 3
+n_in_channels = 2
+n_kernels = 32
+kernel_size = 7
+l_rate = 1e-3
+weight_decay = 1e-5
+n_updates = 5e4
+
+############
+Tiramisu
+last try with 10h training #hopefulle the best training
+yeah 10h training for nothing -1159
+
+Scores:
+test loss: 154.7488555908203
+validation loss: 122.53565979003906
+training loss: 178.12879943847656
+
+# Hyperparameter
+batch_size = 1 #do not change
+batch_size_trainloader = 25 #can be changed
+num_workers = 0
+# CNN
+n_hidden_layers = 3
+n_in_channels = 2
+n_kernels = 32
+kernel_size = 7 #do not change
+# learning
+l_rate = 1e-3
+weight_decay = 1e-8
+n_updates = 5e5
+
+

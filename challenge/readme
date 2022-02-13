@@ -1,0 +1,50 @@
+'''
+Author: Maximilian Hageneder
+Matrikelnummer: k11942708
+'''
+
+################################################
+Hardware:
+Gigabyte Aero 15 YB
+Nvidia RTX 2080 Super with Max-Q design 8gb / Cuda: 11.4
+Intel core i7 10875
+32 GB RAM
+#################################################
+
+1. img_to_pkl.py
+There will be all images stored as numpy array in a pickle file.
+First I stored the image then the known array and last the target array but never the less. I never used the target array again.
+
+2. main.py
+The main file is basically a modified version of the main file from the example project.
+at first i add a cut function to split the np arrays in the pkl file to use the 3 array separately.
+    2.1. evaluation.py
+    I also used  nearly the same eval as in the example projekt just modified(to evaluate the borders and not the rotation)
+Then I created the CNN and the while loop, both are nearly similar to the example project but with some changes to predict the borders.
+in the last step I wrote a for loop to open the testset.pkl to compare the predictions with the targets and stored it in the outputs.pkl
+for uploading to the server. At this point I orientate me at the for loop for the training.
+
+3.cut_array.py
+this is just a small function to separate the numpy array in the pickle file.
+
+4.CNN(architectures.py)
+is the same CNN as in the example project. Nothing is changed here.
+
+5.scors.txt
+I just saved the hyperparameters and the score of the prediction/loss to get a better overview which one i should upload.
+There is also documented what i changed after each training.
+every file which was uploaded, has the same name written there to have a better overview which one was good at the server.
+
+################################################
+used files(from programming in python II):
+ex4_solution.py
+05_solutions.py
+07_1_code.py
+07_2_classes_background.py
+07_solutions.py
+08_code.py
+
+example_project/
+    main.py
+    architectures.py    
+#################################################
